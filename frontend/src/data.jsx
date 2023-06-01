@@ -9,7 +9,6 @@ import { TbMathSymbols } from 'react-icons/tb';
 import { BsUniversalAccessCircle } from 'react-icons/bs';
 import { VscTools } from 'react-icons/vsc';
 import { GoFileMedia } from 'react-icons/go';
-import { FcOnlineSupport } from 'react-icons/fc';
 
 export const PDF_TOOLS = [
   {

@@ -7,28 +7,28 @@ import {
 
 const Footer = () => {
   return (
-    <footer class="z-10 bg-white pt-10 pb-10 lg:pt-20 lg:pb-20">
-      <div class="w-[90%] mx-auto">
-        <div class="-mx-4 flex flex-wrap">
-          <div class="w-full px-4 sm:w-2/3 lg:w-4/12">
-            <div class="mb-10 w-full">
+    <footer className="z-10 bg-white pt-10 pb-5 lg:pt-20 lg:pb-5">
+      <div className="w-[90%] mx-auto">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="w-full px-4 sm:w-2/3 lg:w-4/12">
+            <div className="mb-10 w-full">
               <a
-                href="javascript:void(0)"
-                class="mb-6 inline-block max-w-[160px] text-purple-800 font-bold text-2xl"
+                href="/"
+                className="mb-6 inline-block max-w-[160px] text-purple-800 font-bold text-2xl"
               >
                 CompressWizard
               </a>
-              <p class="text-body-color mb-7 text-base max-w-sm">
+              <p className="text-body-color mb-7 text-base max-w-sm">
                 Compress documents, Images, Videos, Zip Files with
                 this free online tool.
               </p>
-              <p class="text-dark flex items-center text-sm font-medium">
-                <span class="text-primary mr-3">
+              <p className="text-dark flex items-center text-sm font-medium">
+                <span className="text-primary mr-3">
                   <svg
                     width="19"
                     height="21"
                     viewBox="0 0 19 21"
-                    class="fill-current"
+                    className="fill-current"
                   >
                     <path d="M17.8076 11.8129C17.741 11.0475 17.1088 10.5151 16.3434 10.5151H2.16795C1.40261 10.5151 0.803643 11.0808 0.703816 11.8129L0.00502514 18.8008C-0.0282506 19.2001 0.104853 19.6327 0.371059 19.9322C0.637265 20.2317 1.03657 20.398 1.46916 20.398H17.0755C17.4748 20.398 17.8741 20.2317 18.1736 19.9322C18.4398 19.6327 18.5729 19.2334 18.5396 18.8008L17.8076 11.8129ZM17.2751 19.1668C17.2419 19.2001 17.1753 19.2667 17.0422 19.2667H1.46916C1.36933 19.2667 1.2695 19.2001 1.23623 19.1668C1.20295 19.1336 1.1364 19.067 1.16968 18.9339L1.86847 11.9127C1.86847 11.7463 2.00157 11.6465 2.16795 11.6465H16.3767C16.5431 11.6465 16.6429 11.7463 16.6762 11.9127L17.375 18.9339C17.3417 19.0337 17.3084 19.1336 17.2751 19.1668Z" />
                     <path d="M9.25704 13.1106C7.95928 13.1106 6.92773 14.1422 6.92773 15.4399C6.92773 16.7377 7.95928 17.7693 9.25704 17.7693C10.5548 17.7693 11.5863 16.7377 11.5863 15.4399C11.5863 14.1422 10.5548 13.1106 9.25704 13.1106ZM9.25704 16.6046C8.6248 16.6046 8.09239 16.0722 8.09239 15.4399C8.09239 14.8077 8.6248 14.2753 9.25704 14.2753C9.88928 14.2753 10.4217 14.8077 10.4217 15.4399C10.4217 16.0722 9.88928 16.6046 9.25704 16.6046Z" />
@@ -40,17 +40,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
-            <div class="mb-6 w-full">
-              <h4 class="text-dark mb-6 text-lg font-semibold">
+          <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div className="mb-6 w-full">
+              <h4 className="text-dark mb-6 text-lg font-semibold">
                 Compress Documents
               </h4>
               <ul>
                 {PDF_TOOLS.map((pdf) => (
-                  <li>
+                  <li key={pdf.title}>
                     <a
-                      href="javascript:void(0)"
-                      class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose hover:text-purple-800 duration-75"
+                      href="/"
+                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose hover:text-purple-800 duration-75"
                     >
                       {pdf.title}
                     </a>
@@ -60,17 +60,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
-            <div class="mb-6 w-full">
-              <h4 class="text-dark mb-6 text-lg font-semibold">
+          <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div className="mb-6 w-full">
+              <h4 className="text-dark mb-6 text-lg font-semibold">
                 Compress Images
               </h4>
               <ul>
                 {IMAGES_TOOLS.map((image) => (
-                  <li>
+                  <li key={image.title}>
                     <a
-                      href="javascript:void(0)"
-                      class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose hover:text-purple-800 duration-75"
+                      href="/"
+                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose hover:text-purple-800 duration-75"
                     >
                       {image.title}
                     </a>
@@ -80,17 +80,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
-            <div class="mb-6 w-full">
-              <h4 class="text-dark mb-6 text-lg font-semibold">
+          <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div className="mb-6 w-full">
+              <h4 className="text-dark mb-6 text-lg font-semibold">
                 Zip Files
               </h4>
               <ul>
                 {ZIP_TOOLS.map((zip) => (
-                  <li>
+                  <li key={zip.title}>
                     <a
-                      href="javascript:void(0)"
-                      class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose hover:text-purple-800 duration-75"
+                      href="/"
+                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose hover:text-purple-800 duration-75"
                     >
                       {zip.title}
                     </a>
@@ -100,17 +100,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
-            <div class="mb-6 w-full">
-              <h4 class="text-dark mb-6 text-lg font-semibold">
+          <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div className="mb-6 w-full">
+              <h4 className="text-dark mb-6 text-lg font-semibold">
                 Compress Videos
               </h4>
               <ul>
                 {VIDEOS_TOOLS.map((video) => (
-                  <li>
+                  <li key={video.title}>
                     <a
-                      href="javascript:void(0)"
-                      class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose hover:text-purple-800 duration-75"
+                      href="/"
+                      className="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose hover:text-purple-800 duration-75"
                     >
                       {video.title}
                     </a>

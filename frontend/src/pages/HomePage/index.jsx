@@ -5,23 +5,21 @@ import CompressorList from './CompressorList';
 
 const HomePage = () => {
   return (
-    <div className="bg-gray-100">
-      <div className="bg-gray-100 pt-8">
-        <div className="w-[95%] mx-auto pb-12">
-          {/* Heading Title */}
-          <div className="flex flex-col items-center py-2 space-y-2 mb-6">
-            <h1 className="font-semibold text-2xl md:text-3xl">
-              Free Online File Compressor
-            </h1>
-            <p className="text-md md:text-lg tracking-wide font-light text-center max-w-xl">
-              Compress your files online. Please select one of the
-              compression tools below:
-            </p>
-          </div>
-
-          {/* Compressors */}
-          <CompressorList />
+    <>
+      <div className="w-[95%] mx-auto pb-12">
+        {/* Heading Title */}
+        <div className="flex flex-col items-center py-2 space-y-2 mb-6">
+          <h1 className="font-semibold text-2xl md:text-3xl">
+            Free Online File Compressor
+          </h1>
+          <p className="text-md md:text-lg tracking-wide font-light text-center max-w-xl">
+            Compress your files online. Please select one of the
+            compression tools below:
+          </p>
         </div>
+
+        {/* Compressors */}
+        <CompressorList />
       </div>
 
       {/* Benefits */}
@@ -49,7 +47,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

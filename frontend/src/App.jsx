@@ -1,16 +1,18 @@
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
-import HomePage from './pages/HomePage';
+import { RouterProvider } from 'react-router-dom';
+
+import router from './routes';
 
 const App = () => {
   return (
-    <div>
-      <div className="pb-16">
-        <Header />
+    <>
+      <Header />
+      <div className="pt-20 bg-gray-100">
+        <RouterProvider router={router} />
       </div>
-      <HomePage />
       <Footer />
-    </div>
+    </>
   );
 };
 

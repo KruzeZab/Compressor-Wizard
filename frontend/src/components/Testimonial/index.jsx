@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Testimonial = ({ icon, description, name, jobTitle }) => {
   return (
     <div className="shadow-md px-8 py-10 rounded-xl bg-white">
@@ -17,6 +19,13 @@ const Testimonial = ({ icon, description, name, jobTitle }) => {
       <p className="tracking-wide leading-6 text-sm">{description}</p>
     </div>
   );
+};
+
+Testimonial.propTypes = {
+  icon: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  jobTitle: PropTypes.string.isRequired,
 };
 
 export default Testimonial;

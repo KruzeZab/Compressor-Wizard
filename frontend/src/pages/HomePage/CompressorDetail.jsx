@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const CompressorDetail = ({ icon, title, description }) => {
   return (
     <a href="/" key={title} className="tool group">
@@ -10,6 +12,12 @@ const CompressorDetail = ({ icon, title, description }) => {
       </div>
     </a>
   );
+};
+
+CompressorDetail.propTypes = {
+  icon: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default CompressorDetail;
